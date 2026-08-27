@@ -1,4 +1,4 @@
-# Vehicle Sensing
+# Vehicle Sensors
 
 Este repositório contém os pacotes ROS 2 responsáveis pela integração e pelo gerenciamento dos sensores utilizados no veículo.
 

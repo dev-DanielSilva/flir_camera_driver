@@ -1,0 +1,15 @@
+float64 veh_long_ovr_gnd_a_est
+float64 veh_over_gnd_v_est
+float64 veh_long_comp_a_actl
+float64 timestamp_abs_h_frp00
+
+float64 whlfl_w_meas
+float64 whlfr_w_meas
+float64 whlrl_w_meas
+float64 whlrr_w_meas
+float64 timestamp_abs_h_frp02
+
+float64 steer_angle_cr_short_filt
+float64 steering_angle_cr
+float64 steering_angle
+float64 timestamp_sasm_h_frp00

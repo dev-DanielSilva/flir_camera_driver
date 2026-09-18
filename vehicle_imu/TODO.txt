@@ -1,0 +1,4 @@
+1. Avaliar quais mensagens podem ser úteis para o nó de controle, utilizar um ($ ros2 topic list) com o nó em funcionamento, para avaliar 
+a posição, a covariancia, o status do ntrip, e cadastrar quais tópicos são uteis
+
+2. Realizar um teste com o nó da septentrio e diagnosticar a precisão de ambas.

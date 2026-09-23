@@ -38,3 +38,4 @@ O pacote `vehicle_sensors_bringup` é responsável pela **inicialização conjun
 ### ROS Install steps:
 
 1. Download and compile the ROS Package `flir_camera_driver`. For installation tutorials, please check [https://github.com/ros-drivers/flir_camera_driver/blob/humble-devel/spinnaker_camera_driver/doc/index.rst]
+2. Install the latest Spinnaker SDK [https://www.teledynevisionsolutions.com/support/support-center/software-firmware-downloads/iis/spinnaker-sdk-download/spinnaker-sdk--download-files/?pn=Spinnaker+SDK&vn=Spinnaker+SDK]

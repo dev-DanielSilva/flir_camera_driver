@@ -48,13 +48,24 @@ example_parameters = {
         # 'image_height': 1080,
         # 'offset_x': 16,
         # 'offset_y': 0,
-        # 'binning_x': 1,
-        # 'binning_y': 1,
+
+        # Resolução Padrão:
+        #'binning_x': 1, 
+        #'binning_y': 1,
+        #'image_width': 2048,
+        #'image_height': 1536,
+
+        # Resolução Nova, sem crop:
+        'binning_x': 2,
+        'binning_y': 2,
+        'image_width': 1024,
+        'image_height': 768,
+
         # 'connect_while_subscribed': True,
         # 'reverse_x': True,
         # 'reverse_y': True,
         'frame_rate_auto': 'Off',
-        'frame_rate': 40.0,
+        'frame_rate': 30.0,
         'frame_rate_enable': True,
         'buffer_queue_size': 10,
         'trigger_mode': 'Off',
@@ -177,7 +188,6 @@ def launch_setup(context, *args, **kwargs):
                 'flir_camera.image_raw.ffmpeg.bit_rate': 10000000,
                 'parameter_file': parameter_file,
                 'serial_number': [LaunchConfig('serial')],
-                'ip_address': [LaunchConfig('ip_address')],
             },
         ],
         remappings=[
@@ -204,13 +214,8 @@ def generate_launch_description():
             ),
             LaunchArg(
                 'serial',
-                default_value='',
-                description='FLIR serial number of camera (in quotes!!), unless ip_address is set',
-            ),
-            LaunchArg(
-                'ip_address',
-                default_value='',
-                description='IPv4 address of a GigE camera, in place of serial',
+                default_value="'24031513'",
+                description='FLIR serial number of camera (in quotes!!)',
             ),
             LaunchArg(
                 'parameter_file',
